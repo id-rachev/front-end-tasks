@@ -1,0 +1,5 @@
+D:\Projects\Telerik Academy\Java Script\front-end-tasks\toolbar-task\bin\toolbar-task.dll
+D:\Projects\Telerik Academy\Java Script\front-end-tasks\toolbar-task\bin\toolbar-task.pdb
+D:\Projects\Telerik Academy\Java Script\front-end-tasks\toolbar-task\obj\Debug\toolbar-task.csprojResolveAssemblyReference.cache
+D:\Projects\Telerik Academy\Java Script\front-end-tasks\toolbar-task\obj\Debug\toolbar-task.dll
+D:\Projects\Telerik Academy\Java Script\front-end-tasks\toolbar-task\obj\Debug\toolbar-task.pdb
