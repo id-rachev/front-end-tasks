@@ -24,7 +24,7 @@ var toolbars = (function () {
                     $(el).colpickHide();
                 }
             });
-            $(".colpick").draggable();
+            $(".colpick").draggable({cancel: "div.colpick div"});
 
             wrapper.on("click", "#add-button-tool", function () {
                 self.createButton(wrapper, ++elementsCount);
