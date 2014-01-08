@@ -32,16 +32,32 @@ var toolbars = (function () {
             wrapper.on("click", "#add-text-tool", function () {
                 self.createText(wrapper, ++elementsCount);
             });
+            wrapper.on("click", "#add-image-tool", function () {
+                self.createImage(wrapper, ++elementsCount);
+                if (!document.getElementById("#popup-imgs")) {
+                    var popupImagesHtml = ui.popupImages();
+                    wrapper.append(popupImagesHtml);
+                    $("#popup-imgs").dialog({
+                        autoOpen: false,
+                        width: 430
+                    });
+                }
+            });
         },
         createButton: function (selector, idCount) {
             var newButton = elements.button();
             newButton.render(selector, "button", idCount, "#335588");
-            $("#el-" + idCount).draggable();
+            $("#el-" + idCount).parent().draggable();
         },
         createText: function (selector, idCount) {
             var newText = elements.text();
             newText.render(selector, "text", idCount, "#6688bb");
             $("#el-" + idCount).draggable();
+        },
+        createImage: function (selector, idCount) {
+            var newImage = elements.image();
+            newImage.render(selector, "images/icon-0.jpg", idCount);
+            $("#el-" + idCount).parent().draggable();
         }
     });
 

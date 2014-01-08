@@ -72,12 +72,29 @@ var elements = (function () {
         }
     });
 
+    var ImageObj = Class.create({
+        render: function (selector, imageUrl, idCount) {
+            var self = this;
+            var imageHtml = ui.imageElement(imageUrl, idCount);
+            $(selector).append(imageHtml);
+
+            var imageElement = ".img.element #el-" + idCount;
+
+            $(selector).on("dblclick", imageElement, function () {
+                $("#popup-imgs").dialog("open");
+            });
+        }
+    });
+
     return {
         button: function () {
             return new ButtonObj();
         },
         text: function () {
             return new TextObj();
+        },
+        image: function () {
+            return new ImageObj();
         }
     }
 })();

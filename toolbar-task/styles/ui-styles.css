@@ -11,7 +11,7 @@
 }
 
 #toolbar-element {
-    width: 200px;
+    width: 300px;
     border: 2px solid gray;
     background-color: white;
 }
@@ -44,4 +44,13 @@
     background-color: gray;
     color: #fff;
     border: none;
+}
+
+.img.element {
+    display: inline-block;
+    border: 2px solid gray;
+}
+
+.img img {
+    width: 50px;
 }
